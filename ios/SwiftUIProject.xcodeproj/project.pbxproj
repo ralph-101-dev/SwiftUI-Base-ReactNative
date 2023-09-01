@@ -14,6 +14,12 @@
 		362E5B832A3C5AA4003CC58D /* ReactNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E5B822A3C5AA4003CC58D /* ReactNativeView.swift */; };
 		362E5B852A3C6210003CC58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E5B842A3C6210003CC58D /* AppDelegate.swift */; };
 		362E5B912A3C6585003CC58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362E5B8F2A3C6585003CC58D /* Assets.xcassets */; };
+		36C5D98D2AA1B2960095E906 /* ReactNativeRouterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D98C2AA1B2960095E906 /* ReactNativeRouterModule.swift */; };
+		36C5D9912AA1B2C20095E906 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D9902AA1B2C20095E906 /* Router.swift */; };
+		36C5D9942AA1B2EA0095E906 /* ReactNativeRouterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D9932AA1B2EA0095E906 /* ReactNativeRouterModule.m */; };
+		36C5D9972AA1B83F0095E906 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D9962AA1B83F0095E906 /* Env.swift */; };
+		36C5D9992AA1C41C0095E906 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D9982AA1C41C0095E906 /* HomeView.swift */; };
+		36C5D99B2AA1C4250095E906 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5D99A2AA1C4250095E906 /* ProductDetailView.swift */; };
 		6F01273E526717A5C37B7E0F /* libPods-SwiftUIProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB4BB017F7577FF7B1A5EBB /* libPods-SwiftUIProject.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		362E5B842A3C6210003CC58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362E5B8F2A3C6585003CC58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362E5B902A3C6585003CC58D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C5D98C2AA1B2960095E906 /* ReactNativeRouterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeRouterModule.swift; sourceTree = "<group>"; };
+		36C5D9902AA1B2C20095E906 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		36C5D9932AA1B2EA0095E906 /* ReactNativeRouterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeRouterModule.m; sourceTree = "<group>"; };
+		36C5D9962AA1B83F0095E906 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		36C5D9982AA1C41C0095E906 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		36C5D99A2AA1C4250095E906 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		8EB4BB017F7577FF7B1A5EBB /* libPods-SwiftUIProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftUIProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FF54CCD60A096B9B0A8A25 /* Pods-SwiftUIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIProject.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIProject/Pods-SwiftUIProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC6BA90059BFA6DF38E04A53 /* Pods-SwiftUIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIProject/Pods-SwiftUIProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				362E5B842A3C6210003CC58D /* AppDelegate.swift */,
-				362E5B7F2A3C511B003CC58D /* ReactNativeContext.swift */,
+				36C5D98E2AA1B2B60095E906 /* Common */,
 				362E5B892A3C63A9003CC58D /* Views */,
+				36C5D98A2AA1B2530095E906 /* ReactNative */,
 				362E5B772A3C49E4003CC58D /* Preview Content */,
 			);
 			path = SwiftUIProject;
@@ -98,7 +111,8 @@
 			children = (
 				362E5B712A3C49E3003CC58D /* SwiftUIProjectApp.swift */,
 				362E5B732A3C49E3003CC58D /* ContentView.swift */,
-				362E5B822A3C5AA4003CC58D /* ReactNativeView.swift */,
+				36C5D9982AA1C41C0095E906 /* HomeView.swift */,
+				36C5D99A2AA1C4250095E906 /* ProductDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +124,58 @@
 				362E5B902A3C6585003CC58D /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		36C5D98A2AA1B2530095E906 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D98B2AA1B2750095E906 /* Modules */,
+				362E5B7F2A3C511B003CC58D /* ReactNativeContext.swift */,
+				362E5B822A3C5AA4003CC58D /* ReactNativeView.swift */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
+		36C5D98B2AA1B2750095E906 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D9922AA1B2CE0095E906 /* Router */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36C5D98E2AA1B2B60095E906 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D9952AA1B8370095E906 /* Constants */,
+				36C5D98F2AA1B2BE0095E906 /* Navigation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		36C5D98F2AA1B2BE0095E906 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D9902AA1B2C20095E906 /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		36C5D9922AA1B2CE0095E906 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D9932AA1B2EA0095E906 /* ReactNativeRouterModule.m */,
+				36C5D98C2AA1B2960095E906 /* ReactNativeRouterModule.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		36C5D9952AA1B8370095E906 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				36C5D9962AA1B83F0095E906 /* Env.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		DEC0B9B232D8384D94203753 /* Frameworks */ = {
@@ -155,6 +221,7 @@
 				TargetAttributes = {
 					362E5B6D2A3C49E3003CC58D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -253,7 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				362E5B832A3C5AA4003CC58D /* ReactNativeView.swift in Sources */,
+				36C5D9942AA1B2EA0095E906 /* ReactNativeRouterModule.m in Sources */,
+				36C5D99B2AA1C4250095E906 /* ProductDetailView.swift in Sources */,
+				36C5D98D2AA1B2960095E906 /* ReactNativeRouterModule.swift in Sources */,
+				36C5D9992AA1C41C0095E906 /* HomeView.swift in Sources */,
+				36C5D9972AA1B83F0095E906 /* Env.swift in Sources */,
 				362E5B742A3C49E3003CC58D /* ContentView.swift in Sources */,
+				36C5D9912AA1B2C20095E906 /* Router.swift in Sources */,
 				362E5B802A3C511B003CC58D /* ReactNativeContext.swift in Sources */,
 				362E5B852A3C6210003CC58D /* AppDelegate.swift in Sources */,
 				362E5B722A3C49E3003CC58D /* SwiftUIProjectApp.swift in Sources */,
@@ -389,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIProject/Preview Content\"";
@@ -411,6 +485,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIProject/Preview Content\"";

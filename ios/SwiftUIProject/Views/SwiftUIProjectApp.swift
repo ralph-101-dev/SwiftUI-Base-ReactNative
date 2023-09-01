@@ -14,6 +14,7 @@ struct SwiftUIProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Router.shared)
         }
     }
 }

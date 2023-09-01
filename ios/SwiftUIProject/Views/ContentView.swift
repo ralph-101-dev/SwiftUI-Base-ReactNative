@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var props: [AnyHashable: Any]? = [:]
+    @EnvironmentObject var router: Router
     
     var body: some View {
-        VStack {
-            ReactNativeView(moduleName: "App", props: $props)
+        NavigationStack(path: $router.navigationPath) {
+            List {
+                Section("Screens") {
+                    ForEach(ScreenMap.allCases, id: \.path) { screen in
+                        Button(screen.rawValue) {
+                            router.push(path: screen.mockPath)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Navigator")
+            .navigationDestination(for: Destination.self) { destination in
+                DynamicScreen(destination: destination)
+            }
         }
     }
 }
@@ -20,5 +32,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Router.shared)
     }
 }
