@@ -21,7 +21,9 @@ Mobile device hardware handling이나 Performance 혹은 기타 이유로 필요
 
 ## Structure
 
-<img width=1024 src="https://user-images.githubusercontent.com/49086747/264961034-33947a50-5836-4d24-8073-f247a81fb49f.png">
+| AS-IS | TO-BE |
+| -- | -- |
+| <img width=1024 src="https://user-images.githubusercontent.com/49086747/264963483-c6e70282-4371-4c34-a8e6-a130d0fc7d51.png"> | <img width=1024 src="https://user-images.githubusercontent.com/49086747/264961034-33947a50-5836-4d24-8073-f247a81fb49f.png"> |
 
 ## How to run
 
